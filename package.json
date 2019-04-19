@@ -1,0 +1,36 @@
+{
+  "name": "@mv/lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "postinstall": "cd node_modules/canvas && node-gyp rebuild",
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "test": "jest"
+  },
+  "author": "LecodeMV <lecodeworksgame@gmail.com>",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/LecodeMV/-mv-lib.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "canvas": "^2.4.1",
+    "jest": "^24.5.0",
+    "jsdom-global-fork": "^3.0.2-gamma",
+    "pixi.js": "^4.8.7",
+    "rollup": "^1.1.2",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "ts-jest": "^24.0.0",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.2"
+  },
+  "dependencies": {
+    "@types/node": "^11.10.5",
+    "@types/pixi.js": "^4.8.6"
+  }
+}
