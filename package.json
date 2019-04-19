@@ -1,11 +1,10 @@
 {
-  "name": "@mv/lib",
+  "name": "mv-lib",
   "version": "1.0.0",
-  "description": "",
+  "description": "Typed libraries of RPG Maker MV",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "postinstall": "cd node_modules/canvas && node-gyp rebuild",
     "build": "rollup -c",
     "watch": "rollup -cw",
     "test": "jest"
